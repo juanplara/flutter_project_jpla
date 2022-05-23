@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'AC Milan'),
     );
   }
 }
@@ -75,6 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
+      backgroundColor: Colors.black,
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
@@ -95,12 +96,17 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            Text(
+              'AC MILAN:',
+              style: Theme.of(context).textTheme.headline6?.copyWith(color: Colors.red[900]),
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4?.copyWith(color: Colors.red),
+              style: Theme.of(context).textTheme.headline3?.copyWith(color: Colors.red[900]),
+            ),
+            Text(
+              'Season 2021 - 2022 champion',
+              style: Theme.of(context).textTheme.headline6?.copyWith(color: Colors.red[900])
             ),
           ],
         ),
@@ -108,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.add_circle_outline),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
