@@ -17,6 +17,4 @@ class ResponseFirebase {
       });
     } */
   }
-
-  get onChildAdded => null;
 }
