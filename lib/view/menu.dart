@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jpla_project/view/home.dart';
 import 'package:jpla_project/view/listview_1.dart';
 import 'package:jpla_project/view/profile.dart';
 
@@ -16,10 +17,7 @@ class _MenuState extends State<Menu> {
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
+    HomeMain(),
     Profile(),
     ListView1(),
   ];

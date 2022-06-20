@@ -35,7 +35,7 @@ class Home extends State<Splash> {
             child: Lottie.asset('assets/animations/videogame.json'),
             ),
             const SizedBox(height: 20),
-            const Text('Videogames',
+            const Text('JPLA',
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
