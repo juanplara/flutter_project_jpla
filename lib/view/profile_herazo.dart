@@ -23,10 +23,10 @@ class _HerazoState extends State<Herazo> {
       debugShowCheckedModeBanner: false, // Remove the debug banner
       home: Scaffold(
         appBar: AppBar(
-        title: const Text('Perfil de usuarios'),
-        backgroundColor: Colors.black,
-      ),
-      backgroundColor: Colors.white,
+          title: const Text('Perfil de usuarios'),
+          backgroundColor: Colors.black,
+        ),
+        backgroundColor: Colors.white,
         body: Column(
           children: <Widget>[
             // Content of my Row
@@ -38,90 +38,90 @@ class _HerazoState extends State<Herazo> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
-                    height: 100,
-                  width: 100,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/jpla.jpg'),
-                      fit: BoxFit.cover,
-                    ),
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Colors.blue,
-                      width: 5,
-                    ),
-                  ),
-                  padding: EdgeInsets.only(bottom: 50),
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/jpla.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.blue,
+                            width: 5,
+                          ),
+                        ),
+                        padding: EdgeInsets.only(bottom: 50),
                   
-                  ),
+                      ),
                     
 
             //Item 2/4
-                  Container(
-                    height: 100,
-                  width: 100,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/herazo.jpeg'),
-                      fit: BoxFit.cover,
-                    ),
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Colors.blue,
-                      width: 5,
-                    ),
-                  ),
-                  padding: EdgeInsets.only(bottom: 50),
+                      Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/herazo.jpeg'),
+                            fit: BoxFit.cover,
+                          ),
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.blue,
+                            width: 5,
+                          ),
+                        ),
+                        padding: EdgeInsets.only(bottom: 50),
                   
-                  ),
+                      ),
                     ],
                   ),
                 ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text("Juan Pablo\nLara Angulo",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                    Text("Erick Manuel\nHerazo Jimenez",
+                      style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: [
+                        Text('\nUniversidad:', style: optionTitleStyle),
+                        Text('Tec. Autonoma\ndel Pacifico\n', style: optionBodyStyle,),
+                        Text('Estudios Realizados:', style: optionTitleStyle,),
+                        Text('Tecnologo en informática\n', style: optionBodyStyle,),
+                        Text('Experiencia laboral:', style: optionTitleStyle,),
+                        Text('Colgate Palmolive', style: optionBodyStyle,),
+                      ],
+                    ),
+                  Column(
                     children: [
-                      Text("Juan Pablo\nLara Angulo",
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-          ),
-          Text("Erick Manuel\nHerazo Jimenez",
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-          ),
+                      Text('\nUniversidad:', style: optionTitleStyle),
+                      Text('Coorporacion universitaria\nRafael Nuñez\n', style: optionBodyStyle,),
+                      Text('Estudios Realizados:', style: optionTitleStyle,),
+                      Text('Ingenieria de sistemas\n', style: optionBodyStyle,),
+                      Text('Experiencia laboral:', style: optionTitleStyle,),
+                      Text('liteyca de colombia', style: optionBodyStyle,),
                     ],
                   ),
-
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-          Column(
-            children: [
-              Text('\nUniversidad:', style: optionTitleStyle),
-              Text('Tec. Autonoma\ndel Pacifico\n', style: optionBodyStyle,),
-              Text('Estudios Realizados:', style: optionTitleStyle,),
-              Text('Tecnologo en informática\n', style: optionBodyStyle,),
-              Text('Experiencia laboral:', style: optionTitleStyle,),
-              Text('Colgate Palmolive', style: optionBodyStyle,),
-            ],
-          ),
-          Column(
-            children: [
-              Text('\nUniversidad:', style: optionTitleStyle),
-              Text('Coorporacion universitaria\nRafael Nuñez\n', style: optionBodyStyle,),
-              Text('Estudios Realizados:', style: optionTitleStyle,),
-              Text('Ingenieria de sistemas\n', style: optionBodyStyle,),
-              Text('Experiencia laboral:', style: optionTitleStyle,),
-              Text('liteyca de colombia', style: optionBodyStyle,),
-            ],
-          ),
-        ],
-      ),
+                ],
+              ),
           ],
         ),
       ),

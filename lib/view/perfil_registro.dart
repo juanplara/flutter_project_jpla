@@ -16,10 +16,10 @@ class PerfilRegistro extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
-        title: Text("${registros.nombre} ${registros.apellido}"),
-        backgroundColor: Colors.black,
-      ),
-      backgroundColor: Colors.white,
+          title: Text("${registros.nombre} ${registros.apellido}"),
+          backgroundColor: Colors.black,
+        ),
+        backgroundColor: Colors.white,
         body: Column(
           children: 
             [Container(
