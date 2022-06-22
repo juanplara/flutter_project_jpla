@@ -11,18 +11,12 @@ class Carro {
     this.placa,
   });
 
-  factory Carro.fromJson(List<dynamic> json) {
+  factory Carro.fromJson(Map<String,dynamic> json) { 
     return Carro(
-      color: json[0] as String,
-      marca: json[1] as String,
-      modelo: json[2] as int,
-      placa: json[3] as String,
-    );
-    /* return Carro(
-      color: json['color'],
+      color: json['Color'],
       marca: json['marca'],
       modelo: json['modelo'],
       placa: json['placa'],
-    ); */
+    );
   }
 }

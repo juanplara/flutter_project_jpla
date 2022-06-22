@@ -20,24 +20,16 @@ class Registros {
     this.image,
   });
 
-  factory Registros.fromJson(List<dynamic> json) {
+  factory Registros.fromJson(Map<String,dynamic> json) {
+    
     return Registros(
-      carro: json[0] != null ? Carro.fromJson(json[0]) : null,
-      servicio: json[1] != null ? Servicio.fromJson(json[1]) : null,
-      nombre: json[2] as String,
-      apellido: json[3] as String,
-      cel: json[4] as int,
-      licencia: json[5] as String,
-      image: json[6] as String,
-    );
-    /* return Registros(
-      carro: json['carro'] != null ? Carro.fromJson(json['carro']) : null,
-      servicio: json['servicio'] != null ? Servicio.fromJson(json['servicio']) : null,
+      carro: json['Carro'] != null ? Carro.fromJson(json['Carro']) : null,
+      servicio: json['Servicio'] != null ? Servicio.fromJson(json['Servicio']) : null,
       nombre: json['nombre'],
       apellido: json['apellido'],
       cel: json['cel'],
       licencia: json['licencia'],
       image: json['image'],
-    ); */
+    );
   }
 }

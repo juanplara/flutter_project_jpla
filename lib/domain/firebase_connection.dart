@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:firebase_database/firebase_database.dart';
 import 'package:jpla_project/entities/registros.dart';
 import 'package:jpla_project/entities/response_firebase.dart';
@@ -9,12 +11,18 @@ class FirebaseConnection {
     return _database.ref('/Registros');
   }
 
-  Future<ResponseFirebase> getRegistros() async {
+  Future<List> getRegistros() async {
+    List<Registros> mylist = [];
     try {
       DatabaseReference _registros = instanceFirebase();
       DataSnapshot response = await _registros.get();
-      final registers = ResponseFirebase.fromJson(response.value as List);
-      return registers;
+      String jsoncod = json.encode(response.value);
+      Map<String, dynamic> jsondecode = json.decode(jsoncod);
+      jsondecode.forEach(((key, value) {
+        Registros rg = Registros.fromJson(value);
+        mylist.add(rg);
+      }));
+      return mylist;
     } catch (e) {
       rethrow;
     }

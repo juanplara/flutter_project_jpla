@@ -10,16 +10,12 @@ class Servicio {
     this.tapiceria,
   });
 
-  factory Servicio.fromJson(List<dynamic> json) {
+  factory Servicio.fromJson(Map<String,dynamic> json) {
+    
     return Servicio(
-      lavado: json[0] as String,
-      polish: json[1] as String,
-      tapiceria: json[2] as String,
-    );
-    /* return Servicio(
       lavado: json['lavado'],
       polish: json['polish'],
       tapiceria: json['tapiceria'],
-    ); */
+    ); 
   }
 }
