@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jpla_project/view/home.dart';
 import 'package:jpla_project/view/listview_1.dart';
-import 'package:jpla_project/view/profile.dart';
+import 'package:jpla_project/view/profile_herazo.dart';
 
 
 class Menu extends StatefulWidget {
@@ -18,7 +18,7 @@ class _MenuState extends State<Menu> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     HomeMain(),
-    Profile(),
+    Herazo(),
     ListView1(),
   ];
 
@@ -46,11 +46,11 @@ class _MenuState extends State<Menu> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              label: 'Perfil de usuario',
+              label: 'Perfiles de usuario',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.gamepad),
-              label: 'Lista de juegos',
+              label: 'Listado',
             ),
           ],
           currentIndex: _selectedIndex,
