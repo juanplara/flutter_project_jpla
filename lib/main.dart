@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:jpla_project/domain/firebase_connection.dart';
-import 'package:jpla_project/view/firebase_list.dart';
 import 'package:jpla_project/view/listview_1.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:jpla_project/view/splash.dart';
